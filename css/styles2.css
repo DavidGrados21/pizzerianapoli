@@ -1,0 +1,312 @@
+/* =========================
+   GENERAL
+========================= */
+body {
+    background-color: #f5f7fa;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+.custom-navbar {
+    background-color: white;
+    border-bottom: 2px solid #eee;
+}
+
+.navbar .nav-link {
+    color: #1b5e20;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #2e7d32;
+}
+
+.nav-logo {
+    width: 110px;
+    height: auto;
+}
+
+.right-menu {
+    white-space: nowrap;
+}
+
+
+/* =========================
+   ICONOS
+========================= */
+.nav-icon {
+    font-size: 18px;
+    color: #1b5e20;
+}
+
+.nav-icon-img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.mini-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.cart-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.pay-icon {
+    width: 60px;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+.login-text {
+    font-size: 14px;
+}
+
+.small-text div {
+    font-size: 11px;
+    line-height: 1;
+}
+
+.small-text strong {
+    font-size: 13px;
+    color: #1b5e20;
+}
+
+.cart-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1b5e20;
+
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #1b5e20;
+
+    margin-bottom: 20px;
+}
+
+.claims-title {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   BARRAS SUPERIORES
+========================= */
+.top-bar {
+    background-color: #89d957;
+    color: white;
+
+    padding: 12px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    position: relative;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.promo-images {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* IMAGEN IZQUIERDA */
+.hero-img-1 {
+    width: 60%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* PANEL DERECHO */
+.cart-panel {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.img-2-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* IMAGEN DERECHA */
+.hero-img-2 {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   BOTÓN HERO
+========================= */
+.hero-btn {
+    position: absolute;
+
+    bottom: 9%;
+    left: 78%;
+
+    transform: translateX(-50%);
+
+    width: 160px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #cddc39;
+    color: #1b5e20;
+
+    border-radius: 50px;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background-color: #f8f8f8;
+
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+
+/* LOGO */
+.footer-logo {
+    width: 220px;
+
+    margin-bottom: 20px;
+}
+
+.book-img {
+    width: 100px;
+}
+
+
+/* SUBSCRIBE */
+.subscribe-box {
+    display: flex;
+
+    margin-bottom: 25px;
+}
+
+.subscribe-box input {
+    width: 70%;
+
+    padding: 12px;
+
+    border: 2px solid #1b5e20;
+    border-radius: 30px;
+
+    outline: none;
+}
+
+.subscribe-box button {
+    background-color: #1b5e20;
+    color: white;
+
+    padding: 12px 20px;
+    margin-left: 10px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-weight: bold;
+}
+
+
+/* REDES */
+.social-icons {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+/* LINKS */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h5,
+.footer-right h5 {
+    color: #1b5e20;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #444;
+
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    color: #1b5e20;
+}
+
+
+/* PAYMENT */
+.payments {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}

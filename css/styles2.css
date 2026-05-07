@@ -335,8 +335,9 @@ img {
     }
 
     .hero-btn {
-        padding: 3px 25px;
+        padding: 2% 20px;
         font-size: 11px;
+        bottom: 1%;
     }
 
     .subscribe-box {

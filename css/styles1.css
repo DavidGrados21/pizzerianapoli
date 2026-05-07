@@ -9,6 +9,11 @@ h2 {
     font-weight: bold;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* =========================
    NAVBAR
@@ -32,8 +37,13 @@ h2 {
     height: auto;
 }
 
+
+/* MENÚ DERECHA */
 .right-menu {
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 
@@ -117,12 +127,12 @@ h2 {
     font-weight: bold;
 }
 
+
+/* HERO BUTTON */
 .hero-btn {
     position: absolute;
-
     bottom: 6%;
     left: 17%;
-
     transform: translateX(-50%);
 
     background-color: #cddc39;
@@ -131,12 +141,13 @@ h2 {
     border: none;
     border-radius: 30px;
 
-    padding: 9px 75px;
+    padding: 11px 79px;
 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 
     cursor: pointer;
+    text-align: center;
 }
 
 
@@ -179,15 +190,62 @@ h2 {
     align-items: center;
 
     gap: 20px;
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 
-.promo-img-1 {
-    width: 750px;
-    height: auto;
-}
-
+.promo-img-1,
 .promo-img-2 {
-    width: 900px;
-    height: auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+
+    .right-menu {
+        justify-content: center;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+    .nav-logo {
+        width: 90px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+@media (max-width: 768px) {
+
+    .right-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-btn {
+        font-size: 13px;
+        padding: 8px 25px;
+        bottom: 5%;
+    }
+
+    .small-text div {
+        font-size: 10px;
+    }
+
+    .small-text strong {
+        font-size: 12px;
+    }
+
+    .promo-img-1,
+    .promo-img-2 {
+        width: 95%;
+    }
 }

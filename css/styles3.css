@@ -9,6 +9,11 @@ h2 {
     font-weight: bold;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* =========================
    NAVBAR
@@ -32,8 +37,12 @@ h2 {
     height: auto;
 }
 
+
+/* EVITA DESBORDES */
 .right-menu {
-    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 
@@ -82,7 +91,7 @@ h2 {
 
 
 /* =========================
-   BARRAS SUPERIORES
+   BARRAS
 ========================= */
 .top-bar {
     background-color: #89d957;
@@ -97,14 +106,45 @@ h2 {
     font-weight: 600;
 }
 
-.hero-img-1 {
 
+/* =========================
+   HERO IMAGE
+========================= */
+.hero-img-1 {
     width: 100%;
     max-width: 1400px;
-
     height: auto;
-
     display: block;
-
     margin: 0 auto;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+
+    .right-menu {
+        justify-content: center;
+    }
+
+    .hero-img-1 {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+@media (max-width: 768px) {
+
+    .right-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-img-1 {
+        width: 95%;
+    }
 }

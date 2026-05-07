@@ -9,6 +9,11 @@ h2 {
     font-weight: bold;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* =========================
    NAVBAR
@@ -32,8 +37,11 @@ h2 {
     height: auto;
 }
 
+/* EVITA ROMPER EN MÓVIL */
 .right-menu {
-    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 
@@ -70,6 +78,7 @@ h2 {
 
 .pay-icon {
     width: 60px;
+    max-width: 100%;
 }
 
 
@@ -94,16 +103,13 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     color: #1b5e20;
-
     margin-bottom: 20px;
 }
 
 .footer-text {
     font-size: 18px;
     font-weight: bold;
-
     color: #1b5e20;
-
     margin-bottom: 20px;
 }
 
@@ -113,32 +119,28 @@ h2 {
 
 
 /* =========================
-   BARRAS SUPERIORES
+   BARRA SUPERIOR
 ========================= */
 .top-bar {
     background-color: #89d957;
     color: white;
-
     padding: 12px;
 }
 
 
 /* =========================
-   HERO
+   HERO / PROMO
 ========================= */
 .hero {
     position: relative;
-
     width: 100%;
     overflow: hidden;
 }
 
 .promo-images {
     display: flex;
-
     justify-content: center;
     align-items: flex-start;
-
     gap: 20px;
     padding: 20px;
 }
@@ -148,7 +150,6 @@ h2 {
 .hero-img-1 {
     width: 60%;
     height: auto;
-
     display: block;
 }
 
@@ -156,19 +157,15 @@ h2 {
 /* PANEL DERECHO */
 .cart-panel {
     width: 30%;
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
 .img-2-container {
     position: relative;
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
@@ -177,24 +174,21 @@ h2 {
 .hero-img-2 {
     width: 100%;
     height: auto;
-
     display: block;
 }
 
 
 /* =========================
-   BOTÓN HERO
+   BOTÓN HERO (FIX RESPONSIVE)
 ========================= */
 .hero-btn {
     position: absolute;
-
-    bottom: 9%;
-    left: 78%;
-
+    bottom: 4%;
+    left: 80%;
     transform: translateX(-50%);
 
     width: 160px;
-    height: 35px;
+    height: 40px;
 
     display: flex;
     justify-content: center;
@@ -205,7 +199,7 @@ h2 {
 
     border-radius: 50px;
 
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
 
     text-decoration: none;
@@ -217,39 +211,36 @@ h2 {
 ========================= */
 .footer {
     background-color: #f8f8f8;
-
     margin-top: 50px;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
-
-/* LOGO */
 .footer-logo {
     width: 220px;
-
     margin-bottom: 20px;
 }
 
 .book-img {
     width: 100px;
+    max-width: 100%;
 }
 
 
 /* SUBSCRIBE */
 .subscribe-box {
     display: flex;
-
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 25px;
 }
 
 .subscribe-box input {
-    width: 70%;
+    flex: 1;
+    min-width: 200px;
 
     padding: 12px;
-
     border: 2px solid #1b5e20;
     border-radius: 30px;
-
     outline: none;
 }
 
@@ -258,7 +249,6 @@ h2 {
     color: white;
 
     padding: 12px 20px;
-    margin-left: 10px;
 
     border: none;
     border-radius: 30px;
@@ -270,8 +260,8 @@ h2 {
 /* REDES */
 .social-icons {
     display: flex;
-
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 
@@ -284,16 +274,13 @@ h2 {
 .footer-links h5,
 .footer-right h5 {
     color: #1b5e20;
-
     font-weight: bold;
-
     margin-bottom: 15px;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #444;
-
     margin-bottom: 10px;
 }
 
@@ -305,8 +292,67 @@ h2 {
 /* PAYMENT */
 .payments {
     display: flex;
-
     gap: 10px;
-
     margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+
+    .promo-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-img-1,
+    .hero-img-2 {
+        width: 90%;
+    }
+
+    .right-menu {
+        justify-content: center;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+@media (max-width: 768px) {
+
+    .promo-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-img-1,
+    .hero-img-2 {
+        width: 95%;
+    }
+
+    .hero-btn {
+        width: 80%;
+        font-size: 11px;
+    }
+
+    .subscribe-box {
+        flex-direction: column;
+    }
+
+    .subscribe-box input,
+    .subscribe-box button {
+        width: 100%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
